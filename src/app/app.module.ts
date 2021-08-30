@@ -11,6 +11,7 @@ import { SigninComponent } from './components/auth/signin/signin.component';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { ProductdetailsComponent } from './components/product/productdetails/productdetails.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ContactComponent } from './contact/contact.component';
     SigninComponent,
     HomeComponent,
     FooterComponent,
-    ContactComponent
+    ContactComponent,
+    ProductdetailsComponent
   ],
   imports: [
     BrowserModule,
