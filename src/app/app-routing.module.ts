@@ -5,6 +5,7 @@ import { SigninComponent } from './components/auth/signin/signin.component';
 import { CartComponent } from './components/cart/cart.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProductComponent } from './components/product/product.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'register', component: SigninComponent },
   { path: 'cart', component: CartComponent },
   { path: 'product', component: ProductComponent },
+  { path: 'contact', component: ContactComponent },
   { path: '', pathMatch: 'full', redirectTo: 'home' }
 ];
 

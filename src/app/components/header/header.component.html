@@ -47,6 +47,9 @@
                 <li class="nav-item">
                     <a class="nav-link" [routerLink]="['home']" routerLinkActive="router-link-active">Home</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['contact']" routerLinkActive="router-link-active">Contact</a>
+                </li>
                 <!-- <li class="nav-item">
             <a class="nav-link" [routerLink]="['register']" routerLinkActive="router-link-active" >Sign In</a>
           </li>
@@ -75,7 +78,7 @@
             </ul>
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                <button class="btn btn-outline-success" type="submit">Cart</button>
+                <button class="btn btn-outline-success"  [routerLink]="['cart']">Cart</button>
             </form>
         </div>
     </div>
