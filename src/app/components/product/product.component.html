@@ -1,5 +1,5 @@
-<div class="card w16r" >
-    <div class="col">
+<!-- <div class="card w16r"> -->
+    <!-- <div class="col">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 
             <div class="carousel-inner">
@@ -26,14 +26,30 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-    </div>
+    </div> -->
 
-    <div class="card-body">
+    <!-- <div class="card-body">
         <h5 class="card-title">Product Name</h5>
         <p class="card-text">Some quick example and make up the bulk of the
             card's content.</p>
         <a href="#" class="btn btn-primary"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> Add to Cart</a>
         <button class="btn btn-primary" routerLink="/productdetails">Preview</button>
 
+    </div> -->
+<!-- </div> -->
+
+<div class="container">
+    
+    <div class="row">
+        <ng-container *ngFor="let item of productList"> 
+            <div class="card col-md-3">
+                <img src="{{item.image}}" alt="">
+                <h5 style="white-space: nowrap;overflow: hidden; text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
+                <p  style="white-space: nowrap;overflow: hidden; text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>
+                <p><strong>Price:</strong>${{item.price}}</p>
+                <button class="btn btn-primary">Add to cart</button>
+            </div>
+        </ng-container>
+        
     </div>
 </div>

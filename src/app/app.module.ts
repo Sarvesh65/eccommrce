@@ -12,6 +12,9 @@ import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProductdetailsComponent } from './components/product/productdetails/productdetails.component';
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 @NgModule({
   declarations: [
@@ -28,7 +31,8 @@ import { ProductdetailsComponent } from './components/product/productdetails/pro
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

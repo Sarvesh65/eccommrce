@@ -16,8 +16,9 @@ const routes: Routes = [
   { path: 'product', component: ProductComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'productdetails', component: ProductdetailsComponent },
-  { path: '', pathMatch: 'full', redirectTo: 'home' }
+  { path: '', pathMatch: 'full', redirectTo: 'product' }
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
